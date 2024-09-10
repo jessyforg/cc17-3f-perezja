@@ -1,0 +1,44 @@
+fun main() {
+    // The application must create a variable for pounds (lbs) and convert it to kilograms (kg) then output the initial value and converted value.
+    val pounds = 115.0
+    val kilograms = pounds * 0.45359237
+    println("Initial value: $pounds pounds")
+    println("Converted value: $kilograms kilograms")
+
+    // The application must create a variable for miles (mi) and convert it to kilometers (km) and then output the initial value and converted value.
+    val miles = 100.0
+    val kilometers = miles * 1.609344
+    println("Initial value: $miles miles")
+    println("Converted value: $kilometers kilometers")
+
+    // The application must create a variable for Fahrenheit (°F) and convert it to Celsius (°C) and then output the initial value and converted value. 
+    val fahrenheit = 98.6
+    val celsius = (fahrenheit - 32) * 5.0 / 9.0
+    println("Initial value: $fahrenheit°F")
+    println("Converted value: $celsius°C")
+
+    // The application must calculate the average age of a group of 10 students then display the ages of all the students and the average age of the students.
+    val studentAges = listOf(20, 22, 19, 25, 21, 18, 24, 23, 26, 20)
+    val averageAge = studentAges.sum() / studentAges.size.toDouble()
+    println("Ages of students:\n${studentAges.joinToString("\n")}")
+    println("Average age: $averageAge")
+
+    // The application must output a multiline/regular string. The multiline/regular string will be a fantasy story based on what you will come up with, either based on an existing story or your own creation. The story must include 5 character names, equipment names, item names, or ability names that were assigned to different variables and concatenated to the output.
+    val character1 = "Jessy"
+    val character2 = "Kay"
+    val swordName = "Blade of Olympus"
+    val shieldName = "Shield of Sparta"
+    val abilityName = "Rage of Sparta"
+    val story = """
+        In the land of Olympus, $character1, a brave warrior, 
+        and $character2, a skilled mage, embarked on a quest 
+        to defeat the dark sorcerer, Malakai. 
+        $character1 wielded the mighty $swordName, while $character2 
+        carried the protective $shieldName. 
+        As they journeyed through the treacherous forest, 
+        they stumbled upon a hidden glade, where $character2 
+        unleashed her powerful $abilityName, killing everyone
+        in sight.
+    """.trimIndent()
+    println(story)
+}
